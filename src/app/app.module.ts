@@ -3,28 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './views/home/home.component';
-import { ContactComponent } from './views/contact/contact.component';
-import { AboutComponent } from './views/about/about.component';
-import { ProjectsComponent } from './views/projects/projects.component';
-import { HeaderComponent } from './components/shared/header/header.component';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
+
+// Modules
+import { AboutViewModule } from './public/views/about/about.module';
+import { ContactViewModule } from './public/views/contact/contact.module';
+import { HomeViewModule } from './public/views/home/home.module';
+import { ProjectsViewModule } from './public/views/projects/projects.module';
+import { PublicShellModule } from './public/shell/public-shell.module';
+
+// Components
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ContactComponent,
-    AboutComponent,
-    ProjectsComponent,
-    HeaderComponent,
-    NavbarComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Public
+    PublicShellModule,
+    // Views
+    AboutViewModule,
+    ContactViewModule,
+    HomeViewModule,
+    ProjectsViewModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
