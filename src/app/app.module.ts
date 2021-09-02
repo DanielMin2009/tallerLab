@@ -4,14 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// Modules
+// Shell
+import { PublicShellModule } from './public/public-shell/public-shell.module';
+
+// Views
 import { AboutViewModule } from './public/views/about/about.module';
 import { ContactViewModule } from './public/views/contact/contact.module';
 import { HomeViewModule } from './public/views/home/home.module';
 import { ProjectsViewModule } from './public/views/projects/projects.module';
-import { PublicShellModule } from './public/shell/public-shell.module';
 
-// Components
+// Shared
 
 @NgModule({
   declarations: [
@@ -27,8 +29,6 @@ import { PublicShellModule } from './public/shell/public-shell.module';
     ContactViewModule,
     HomeViewModule,
     ProjectsViewModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Routing
+import { AppRoutingModule } from 'src/app/app-routing.module';
+
 // Components
 import { PublicShellComponent } from './public-shell.component';
 
@@ -9,7 +12,7 @@ import { PublicFooterModule } from './footer/footer.module';
 import { PublicHeaderModule } from './header/header.module';
 import { PublicNavbarModule } from './navbar/navbar.module';
 import { PublicMainModule } from './main/main.module';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { PublicSidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
   imports: [
@@ -20,6 +23,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     PublicHeaderModule,
     PublicMainModule,
     PublicNavbarModule,
+    PublicSidebarModule,
   ],
   providers: [],
   declarations: [PublicShellComponent],
@@ -29,6 +33,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     PublicHeaderModule,
     PublicMainModule,
     PublicNavbarModule,
+    PublicSidebarModule,
   ],
 })
 export class PublicShellModule {}
