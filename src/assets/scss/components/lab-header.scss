@@ -1,1 +1,11 @@
 // Header
+.lab-header {
+    .lab-header--wrapper {
+        max-width: 88vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 5rem;
+    }
+}
