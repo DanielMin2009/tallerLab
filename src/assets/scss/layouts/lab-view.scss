@@ -2,6 +2,15 @@
 .lab-view {
     .lab-view--wrapper {
         width: 100%;
-        min-height: calc(100vh - 4rem);
+        min-height: calc(100vh - 5rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font: {
+                size: 3.2rem;
+            }
+            ;
+        }
     }
 }
