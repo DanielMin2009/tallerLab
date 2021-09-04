@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lab-public-header',
+  selector: 'app-public-header',
   templateUrl: './header.component.html',
   host: {
     'class' : 'lab-shell-component lab-header'

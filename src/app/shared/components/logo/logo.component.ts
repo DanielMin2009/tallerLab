@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lab-logo',
+  selector: 'app-logo',
   templateUrl: './logo.component.html',
   host: {
     'class' : 'lab-component lab-logo'

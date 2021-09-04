@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lab-projects-view',
+  selector: 'app-projects-view',
   templateUrl: './projects.component.html',
   host: {
     'class' : 'lab-view lab-view-projects'

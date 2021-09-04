@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { LabRoutingModule } from './lab-routing.module';
-import { LabComponent } from './lab.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 // Shell
 import { PublicShellModule } from './public/public-shell/public-shell.module';
@@ -17,11 +17,11 @@ import { ProjectsViewModule } from './public/views/projects/projects.module';
 
 @NgModule({
   declarations: [
-    LabComponent,
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    LabRoutingModule,
+    AppRoutingModule,
     // Public
     PublicShellModule,
     // Views
@@ -31,6 +31,6 @@ import { ProjectsViewModule } from './public/views/projects/projects.module';
     ProjectsViewModule,
   ],
   providers: [],
-  bootstrap: [LabComponent]
+  bootstrap: [AppComponent]
 })
-export class LabModule { }
+export class AppModule { }
