@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-footer',
+  selector: 'lab-public-footer',
   templateUrl: './footer.component.html',
   host: {
     'class' : 'lab-shell-component lab-footer'
