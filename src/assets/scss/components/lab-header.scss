@@ -9,3 +9,46 @@
         min-height: 5rem;
     }
 }
+
+// Media queries
+// Min-width 1200px - Max width 1600px
+// Non-Retina Screens 
+@media screen and (min-device-width: 75rem) and (max-device-width: 100rem) and (-webkit-min-device-pixel-ratio: 1) {
+    // Header
+    .lab-header {
+        .lab-header--wrapper {
+            max-width: 62.5rem;
+        }
+    }
+}
+
+// Retina Screens 
+@media screen and (min-device-width: 75rem) and (max-device-width: 100rem) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    // Header
+    .lab-header {
+        .lab-header--wrapper {
+            max-width: 62.5rem;
+        }
+    }
+}
+
+// Min-width 1600px 
+// Non-Retina Screens 
+@media screen and (min-device-width: 100rem) and (-webkit-min-device-pixel-ratio: 1) {
+    // Header
+    .lab-header {
+        .lab-header--wrapper {
+            max-width: 75rem;
+        }
+    }
+}
+
+// Retina Screens 
+@media screen and (min-device-width: 100rem) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    // Header
+    .lab-header {
+        .lab-header--wrapper {
+            max-width: 75rem;
+        }
+    }
+}
