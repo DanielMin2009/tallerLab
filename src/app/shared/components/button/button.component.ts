@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-button',
+  selector: 'lab-button',
   templateUrl: './button.component.html',
   host: {
     'class' : 'lab-component lab-button'

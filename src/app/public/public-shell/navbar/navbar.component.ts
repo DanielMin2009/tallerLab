@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-navbar',
+  selector: 'lab-public-navbar',
   templateUrl: './navbar.component.html',
   host: {
     'class' : 'lab-shell-component lab-navbar'

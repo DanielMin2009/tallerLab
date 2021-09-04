@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Modules
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { LabRoutingModule } from 'src/app/lab-routing.module';
 
 // Components
 import { PublicNavbarComponent } from './navbar.component';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, LabRoutingModule],
   providers: [],
   declarations: [
     PublicNavbarComponent,

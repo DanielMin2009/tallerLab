@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-main',
+  selector: 'lab-public-main',
   templateUrl: './main.component.html',
   host: {
     'class' : 'lab-shell-component lab-main'

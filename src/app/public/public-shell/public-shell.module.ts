@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Routing
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { LabRoutingModule } from 'src/app/lab-routing.module';
 
 // Components
 import { PublicShellComponent } from './public-shell.component';
@@ -17,7 +17,7 @@ import { PublicSidebarModule } from './sidebar/sidebar.module';
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    LabRoutingModule,
     // Modules
     PublicFooterModule,
     PublicHeaderModule,
