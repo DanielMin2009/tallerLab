@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 // Shell Components
-import { PublicHeaderComponent } from './header.component';
+import { LabPublicHeaderComponent } from './header.component';
 
 // Shared
-import { LogoModule } from '../../../shared/components/logo/logo.module';
-import { PublicNavbarModule } from '../navbar/navbar.module';
+import { LabLogoModule } from '../../../shared/components/logo/logo.module';
+import { LabPublicNavbarModule } from '../navbar/navbar.module';
 
 @NgModule({
-  imports: [BrowserModule, LogoModule, PublicNavbarModule],
+  imports: [BrowserModule, LabLogoModule, LabPublicNavbarModule],
   providers: [],
-  declarations: [PublicHeaderComponent],
-  exports: [PublicHeaderComponent],
+  declarations: [LabPublicHeaderComponent],
+  exports: [LabPublicHeaderComponent],
 })
-export class PublicHeaderModule {}
+export class LabPublicHeaderModule {}

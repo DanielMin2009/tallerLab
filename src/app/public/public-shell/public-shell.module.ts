@@ -2,38 +2,38 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Routing
-import { LabRoutingModule } from 'src/app/lab-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 // Components
-import { PublicShellComponent } from './public-shell.component';
+import { LabPublicShellComponent } from './public-shell.component';
 
 // Modules
-import { PublicFooterModule } from './footer/footer.module';
-import { PublicHeaderModule } from './header/header.module';
-import { PublicNavbarModule } from './navbar/navbar.module';
-import { PublicMainModule } from './main/main.module';
-import { PublicSidebarModule } from './sidebar/sidebar.module';
+import { LabPublicFooterModule } from './footer/footer.module';
+import { LabPublicHeaderModule } from './header/header.module';
+import { LabPublicNavbarModule } from './navbar/navbar.module';
+import { LabPublicMainModule } from './main/main.module';
+import { LabPublicSidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    LabRoutingModule,
+    AppRoutingModule,
     // Modules
-    PublicFooterModule,
-    PublicHeaderModule,
-    PublicMainModule,
-    PublicNavbarModule,
-    PublicSidebarModule,
+    LabPublicFooterModule,
+    LabPublicHeaderModule,
+    LabPublicMainModule,
+    LabPublicNavbarModule,
+    LabPublicSidebarModule,
   ],
   providers: [],
-  declarations: [PublicShellComponent],
+  declarations: [LabPublicShellComponent],
   exports: [
-    PublicShellComponent,
-    PublicFooterModule,
-    PublicHeaderModule,
-    PublicMainModule,
-    PublicNavbarModule,
-    PublicSidebarModule,
+    LabPublicShellComponent,
+    LabPublicFooterModule,
+    LabPublicHeaderModule,
+    LabPublicMainModule,
+    LabPublicNavbarModule,
+    LabPublicSidebarModule,
   ],
 })
-export class PublicShellModule {}
+export class LabPublicShellModule {}

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-public-sidebar',
+  selector: 'lab-public-sidebar-component',
   templateUrl: './sidebar.component.html',
   host: {
     'class' : 'lab-shell-component lab-sidebar'
   },
 })
-export class PublicSidebarComponent implements OnInit {
+export class LabPublicSidebarComponent implements OnInit {
 
   constructor() { }
 

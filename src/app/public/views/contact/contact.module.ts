@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Components
-import { ContactViewComponent } from './contact.component';
+import { LabContactViewComponent } from './contact.component';
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
   declarations: [
-    ContactViewComponent,
+    LabContactViewComponent,
   ],
   exports: [
-    ContactViewComponent,
+    LabContactViewComponent,
   ],
 })
-export class ContactViewModule {}
+export class LabContactViewModule {}

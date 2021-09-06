@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Components
-import { AboutViewComponent } from './about.component';
+import { LabAboutViewComponent } from './about.component';
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
   declarations: [
-    AboutViewComponent,
+    LabAboutViewComponent,
   ],
   exports: [
-    AboutViewComponent,
+    LabAboutViewComponent,
   ],
 })
-export class AboutViewModule {}
+export class LabAboutViewModule {}

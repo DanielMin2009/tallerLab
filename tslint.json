@@ -144,7 +144,7 @@
         "component-selector": [
             true,
             "element",
-            "lab",
+            "app",
             "kebab-case"
         ]
     }

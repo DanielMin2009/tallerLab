@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Components
-import { PublicMainComponent } from './main.component';
+import { LabPublicMainComponent } from './main.component';
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
   declarations: [
-    PublicMainComponent,
+    LabPublicMainComponent,
   ],
   exports: [
-    PublicMainComponent,
+    LabPublicMainComponent,
   ],
 })
-export class PublicMainModule {}
+export class LabPublicMainModule {}

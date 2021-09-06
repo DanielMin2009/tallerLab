@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     'class' : 'lab-component lab-button'
   },
 })
-export class ButtonComponent implements OnInit {
+export class LabButtonComponent implements OnInit {
 
   constructor() { }
 

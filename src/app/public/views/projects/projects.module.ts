@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ProjectsViewComponent } from './projects.component';
+import { LabProjectsViewComponent } from './projects.component';
 
 // Components
 
@@ -8,10 +8,10 @@ import { ProjectsViewComponent } from './projects.component';
   imports: [BrowserModule],
   providers: [],
   declarations: [
-    ProjectsViewComponent,
+    LabProjectsViewComponent,
   ],
   exports: [
-    ProjectsViewComponent,
+    LabProjectsViewComponent,
   ],
 })
-export class ProjectsViewModule {}
+export class LabProjectsViewModule {}

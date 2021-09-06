@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 // Components
-import { LogoComponent } from './logo.component';
+import {LabLogoComponent } from './logo.component';
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
-  declarations: [LogoComponent],
-  exports: [LogoComponent],
+  declarations: [LabLogoComponent],
+  exports: [LabLogoComponent],
 })
-export class LogoModule {}
+export class LabLogoModule {}

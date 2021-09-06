@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lab-logo',
+  selector: 'lab-logo-component',
   templateUrl: './logo.component.html',
   host: {
     'class' : 'lab-component lab-logo'
   },
 })
-export class LogoComponent implements OnInit {
+export class LabLogoComponent implements OnInit {
 
   constructor() { }
 
