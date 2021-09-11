@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Modules
-import { LabRoutingModule } from 'src/app/lab-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 // Components
-import { PublicSidebarComponent } from './sidebar.component';
+import { LabPublicSidebarComponent } from './sidebar.component';
 
 @NgModule({
-  imports: [BrowserModule, LabRoutingModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   declarations: [
-    PublicSidebarComponent,
+    LabPublicSidebarComponent,
   ],
   exports: [
-    PublicSidebarComponent,
+    LabPublicSidebarComponent,
   ],
 })
-export class PublicSidebarModule {}
+export class LabPublicSidebarModule {}

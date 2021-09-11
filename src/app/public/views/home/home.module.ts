@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Components
-import { HomeViewComponent } from './home.component';
+import { LabHomeViewComponent } from './home.component';
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
   declarations: [
-    HomeViewComponent,
+    LabHomeViewComponent,
   ],
   exports: [
-    HomeViewComponent,
+    LabHomeViewComponent,
   ],
 })
-export class HomeViewModule {}
+export class LabHomeViewModule {}

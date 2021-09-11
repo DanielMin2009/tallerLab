@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lab-public-shell',
   templateUrl: './public-shell.component.html',
 })
-export class PublicShellComponent implements OnInit {
+export class LabPublicShellComponent implements OnInit {
 
   constructor() { }
 
