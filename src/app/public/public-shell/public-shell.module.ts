@@ -12,7 +12,7 @@ import { LabPublicFooterModule } from './footer/footer.module';
 import { LabPublicHeaderModule } from './header/header.module';
 import { LabPublicNavbarModule } from './navbar/navbar.module';
 import { LabPublicMainModule } from './main/main.module';
-import { LabPublicSidebarModule } from './sidebar/sidebar.module';
+import { LabPublicSidenavModule } from './sidenav/sidenav.module';
 
 @NgModule({
   imports: [
@@ -23,7 +23,7 @@ import { LabPublicSidebarModule } from './sidebar/sidebar.module';
     LabPublicHeaderModule,
     LabPublicMainModule,
     LabPublicNavbarModule,
-    LabPublicSidebarModule,
+    LabPublicSidenavModule,
   ],
   providers: [],
   declarations: [LabPublicShellComponent],
@@ -33,7 +33,7 @@ import { LabPublicSidebarModule } from './sidebar/sidebar.module';
     LabPublicHeaderModule,
     LabPublicMainModule,
     LabPublicNavbarModule,
-    LabPublicSidebarModule,
+    LabPublicSidenavModule,
   ],
 })
 export class LabPublicShellModule {}

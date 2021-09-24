@@ -5,16 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 // Components
-import { LabPublicSidebarComponent } from './sidebar.component';
+import { LabPublicSidenavComponent } from './sidenav.component';
 
 @NgModule({
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   declarations: [
-    LabPublicSidebarComponent,
+    LabPublicSidenavComponent,
   ],
   exports: [
-    LabPublicSidebarComponent,
+    LabPublicSidenavComponent,
   ],
 })
-export class LabPublicSidebarModule {}
+export class LabPublicSidenavModule {}
