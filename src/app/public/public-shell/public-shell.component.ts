@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { animate, group, query, style, transition, trigger } from '@angular/animations';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'lab-public-shell',
   templateUrl: './public-shell.component.html',
+  animations: [
+      trigger('routeAnimation', [
+      ])
+    ]
+  
 })
-export class LabPublicShellComponent implements OnInit {
+export class LabPublicShellComponent  {  
 
-  constructor() { }
-
-  ngOnInit(): void {
+  goToView(outlet: RouterOutlet) {
+    if (outlet.isActivated) return outlet.activatedRoute.snapshot.url;
   }
 
 }

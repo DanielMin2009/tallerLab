@@ -6,7 +6,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class LabPublicHeaderComponent implements OnInit {
 
-  @HostBinding('class') className = 'lab-shell-component lab-header';
+  @HostBinding('class') className = 'lab-component lab-public-header-component';
 
   constructor() { }
 

@@ -1,4 +1,7 @@
-<lab-public-header-component></lab-public-header-component>
-<lab-public-main-component>
-    <router-outlet></router-outlet>
-</lab-public-main-component>
+<div class="lab-shell">
+    <lab-public-header-component></lab-public-header-component>
+    <main class="lab-view-wrapper" [@routeAnimation]="goToView(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </main>
+    <lab-public-sidenav-component></lab-public-sidenav-component>
+</div>

@@ -1,19 +1,17 @@
 // Navbar
 .lab-navbar {
-    .lab-navbar--wrapper {
-        a {
-            margin-right: 2.2rem;
-            font: {
-                family: 'MarkPro';
-                weight: 500;
-                style: normal;
-                size: .75rem;
-            }
-            ;
-            text: {
-                transform: uppercase;
-            }
-            letter-spacing: 0.05rem;
+    a {
+        margin-right: 2.2rem;
+        font: {
+            family: 'MarkPro';
+            weight: 500;
+            style: normal;
+            size: .75rem;
         }
+        ;
+        text: {
+            transform: uppercase;
+        }
+        letter-spacing: 0.05rem;
     }
 }

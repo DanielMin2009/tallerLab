@@ -6,7 +6,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class LabContactViewComponent implements OnInit {
 
-  @HostBinding('class') className = 'lab-view lab-view-contact';
+  @HostBinding('class') className = 'lab-view-component lab-contact-view-component';
 
   constructor() { }
 
