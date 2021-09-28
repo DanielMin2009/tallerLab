@@ -1,17 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'lab-logo-component',
   templateUrl: './logo.component.html',
-  host: {
-    'class' : 'lab-component lab-logo'
-  },
 })
-export class LabLogoComponent implements OnInit {
+export class LabLogoComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @HostBinding('class') className = 'lab-component lab-logo';
 
 }
