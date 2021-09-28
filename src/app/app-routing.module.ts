@@ -8,10 +8,10 @@ import { LabHomeViewComponent } from './public/views/home/home.component';
 import { LabProjectsViewComponent } from './public/views/projects/projects.component';
 
 const ROUTES: Routes = [
-  { path: "", component: LabHomeViewComponent },
-  { path: "about", component: LabAboutViewComponent },
-  { path: "projects", component: LabProjectsViewComponent },
-  { path: "contact", component: LabContactViewComponent },
+  { path: "", component: LabHomeViewComponent, data: { item: 1 } },
+  { path: "about", component: LabAboutViewComponent, data: { item: 2 } },
+  { path: "projects", component: LabProjectsViewComponent, data: { item: 3 } },
+  { path: "contact", component: LabContactViewComponent, data: { item: 4 } },
 
   { path: "**", pathMatch: 'full', redirectTo: '' }
 ];
