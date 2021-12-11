@@ -1,5 +1,4 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
-
 @Component({
   selector: 'lab-home-view-component',
   templateUrl: './home.component.html',
