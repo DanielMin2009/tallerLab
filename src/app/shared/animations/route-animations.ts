@@ -15,7 +15,12 @@ const baseStyles = style({
   height: '100%',
 });
 
-const TRANSITION_DELAY = 3000;
+const easeInAnim = '200ms ease-in';
+const easeOutAnim = '250ms 120ms ease-out';
+
+const minorScale = 'scale(0.8)';
+const originScale = 'scale(1)';
+const higherScale = 'scale(1.25)';
 
 export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
   transition(':increment', [
@@ -31,7 +36,7 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
         ':leave',
         [
           animate(
-            '200ms ease-in',
+            easeInAnim,
             style({
               opacity: 1,
               transform: 'translateY(-100%)',
@@ -49,7 +54,7 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
             opacity: 1,
           }),
           animate(
-            '250ms 120ms ease-out',
+            easeOutAnim,
             style({
               opacity: 1,
               transform: 'translateY(0)',
@@ -69,16 +74,12 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
 
     query(':enter, :leave', [baseStyles], { optional: true }),
 
-    // query(':enter', [
-    //   style({ opacity: 0 })
-    // ], { optional: true }),
-
     group([
       query(
         ':leave',
         [
           animate(
-            '200ms ease-in',
+            easeInAnim,
             style({
               opacity: 1,
               transform: 'translateY(100%)',
@@ -96,7 +97,7 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
             opacity: 1,
           }),
           animate(
-            '250ms 120ms ease-out',
+            easeOutAnim,
             style({
               opacity: 1,
               transform: 'translateY(0)',
@@ -111,7 +112,6 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
   transition('* => secondary', [
     style({
       position: 'relative',
-      // overflow: 'hidden'
     }),
 
     query(':enter, :leave', [baseStyles], { optional: true }),
@@ -121,10 +121,10 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
         ':leave',
         [
           animate(
-            '200ms ease-in',
+            easeInAnim,
             style({
               opacity: 1,
-              transform: 'scale(0.8)',
+              transform: minorScale,
             })
           ),
         ],
@@ -135,14 +135,14 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
         ':enter',
         [
           style({
-            transform: 'scale(1.2)',
+            transform: higherScale,
             opacity: 1,
           }),
           animate(
-            '250ms 120ms ease-out',
+            easeOutAnim,
             style({
               opacity: 1,
-              transform: 'scale(1)',
+              transform: originScale,
             })
           ),
         ],
@@ -154,7 +154,6 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
   transition('secondary => *', [
     style({
       position: 'relative',
-      // overflow: 'hidden'
     }),
 
     query(':enter, :leave', [baseStyles], { optional: true }),
@@ -164,10 +163,10 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
         ':leave',
         [
           animate(
-            '200ms ease-in',
+            easeInAnim,
             style({
               opacity: 0,
-              transform: 'scale(1.25)',
+              transform: higherScale,
             })
           ),
         ],
@@ -178,14 +177,14 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
         ':enter',
         [
           style({
-            transform: 'scale(0.8)',
+            transform: minorScale,
             opacity: 0,
           }),
           animate(
-            '250ms 120ms ease-out',
+            easeOutAnim,
             style({
               opacity: 1,
-              transform: 'scale(1)',
+              transform: originScale,
             })
           ),
         ],
