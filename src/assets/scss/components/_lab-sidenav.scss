@@ -11,14 +11,14 @@
     gap: .675rem;
     cursor: pointer;
     &>span {
-        width: 0.925rem;
-        height: 0.925rem;
+        width: 0.9125rem;
+        height: 0.9125rem;
         border: 0.1825rem solid black;
         border-radius: 50%;
         transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
         &:hover {
             transform: scale(1.55);
-            border: 0.2rem solid black;
+            border: 0.1865rem solid black;
         }
         &.isActive {
             animation: wobble 3.5s ease infinite;
@@ -36,18 +36,18 @@
         transform: translateX(-10%) translateY(-10%) scale(1.25);
     }
     30% {
-        transform: translateX(10%) translateY(5%) scale(1.5);
+        transform: translateX(10%) translateY(5%) scale(1.4);
     }
     45% {
         transform: translateX(-5%) translateY(0%) scale(1.25);
     }
     60% {
-        transform: translateX(5%) translateY(5%) scale(1.5);
+        transform: translateX(5%) translateY(5%) scale(1.4);
     }
     75% {
         transform: translateX(-5%) translateY(-5%) scale(1.25);
     }
     100% {
-        transform: translateX(0%) translateY(0%) scale(1.5);
+        transform: translateX(0%) translateY(0%) scale(1.4);
     }
 }
