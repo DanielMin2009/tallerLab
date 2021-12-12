@@ -1,10 +1,11 @@
 // View | Common
-.lab-view-wrapper {
-    flex-grow: 1;
-    background-color: coral;
+.lab-view {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
 }
 
-.lab-view {
+.lab-view__content {
     display: flex;
     justify-content: center;
     align-items: center;

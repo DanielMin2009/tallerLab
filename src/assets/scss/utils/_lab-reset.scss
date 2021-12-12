@@ -1,4 +1,8 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+:host {
+    display: block;
+}
+
 html,
 body {
     height: 100%;

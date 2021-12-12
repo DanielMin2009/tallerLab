@@ -1,28 +1,28 @@
 <nav class="lab-sidenav">
     <span class="lab-sidenav-item">
         <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" routerLinkActive="menu-active" routerLink="/">
+            <i class="material-icons-outlined" [routerLink]="['./']" routerLinkActive="isActive" [routerLinkActiveOptions]= "{exact: true}">
                 fiber_manual_record
             </i>
         </a>
     </span>
     <span class="lab-sidenav-item">
         <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" routerLink="/about">
+            <i class="material-icons-outlined" [routerLink]="['./about']" routerLinkActive="isActive">
                 fiber_manual_record
             </i>
         </a>
     </span>
     <span class="lab-sidenav-item">
         <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" routerLink="/projects">
+            <i class="material-icons-outlined" [routerLink]="['./projects']" routerLinkActive="isActive">
                 fiber_manual_record
             </i>
         </a>
     </span>
     <span class="lab-sidenav-item">
         <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" routerLink="/contact">
+            <i class="material-icons-outlined" [routerLink]="['./contact']" routerLinkActive="isActive"> 
                 fiber_manual_record
             </i>
         </a>
