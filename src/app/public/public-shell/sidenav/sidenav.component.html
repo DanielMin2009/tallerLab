@@ -1,30 +1,7 @@
 <nav class="lab-sidenav">
-    <span class="lab-sidenav-item">
-        <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" [routerLink]="['./']" routerLinkActive="isActive" [routerLinkActiveOptions]= "{exact: true}">
-                fiber_manual_record
-            </i>
-        </a>
-    </span>
-    <span class="lab-sidenav-item">
-        <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" [routerLink]="['./about']" routerLinkActive="isActive">
-                fiber_manual_record
-            </i>
-        </a>
-    </span>
-    <span class="lab-sidenav-item">
-        <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" [routerLink]="['./projects']" routerLinkActive="isActive">
-                fiber_manual_record
-            </i>
-        </a>
-    </span>
-    <span class="lab-sidenav-item">
-        <a class="lab-sidenav-tile">
-            <i class="material-icons-outlined" [routerLink]="['./contact']" routerLinkActive="isActive"> 
-                fiber_manual_record
-            </i>
-        </a>
-    </span>
+    <span [routerLink]="['./']" routerLinkActive="isActive" [routerLinkActiveOptions]="{ exact: true }">
+  </span>
+    <span [routerLink]="['./about']" [routerLinkActive]="['isActive']"> </span>
+    <span [routerLink]="['./projects']" [routerLinkActive]="['isActive']"> </span>
+    <span [routerLink]="['./contact']" [routerLinkActive]="['isActive']"> </span>
 </nav>
