@@ -8,7 +8,6 @@ import {
 } from '@angular/animations';
 
 const baseStyles = style({
-  // display: 'block',
   position: 'absolute',
   top: 0,
   left: 0,
@@ -18,18 +17,6 @@ const baseStyles = style({
 
 const TRANSITION_DELAY = 3000;
 
-// export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
-//   transition(':enter', [
-//     style({
-//       opacity: 0,
-//     }),
-//     animate(TRANSITION_DELAY)
-//   ]),
-//   transition(':leave', animate(TRANSITION_DELAY, style({
-//       opacity: 50,
-//     })))
-// ]);
-
 export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
   transition(':increment', [
     style({
@@ -38,10 +25,6 @@ export const ROUTE_SLIDE_TOP_STATE_TRIGGER = trigger('routeSlideTopState', [
     }),
 
     query(':enter, :leave', [baseStyles], { optional: true }),
-
-    // query(':enter', [
-    //   style({ opacity: 0 })
-    // ], { optional: true }),
 
     group([
       query(

@@ -13,11 +13,10 @@ export class LabPublicShellComponent {
 
   goToView(outlet: RouterOutlet) {
     if (outlet.isActivated) {
-      const menuItem = outlet.activatedRouteData['menuItem']
-      if (!menuItem) return 'secondary'
+      const menuItem = outlet.activatedRouteData['menuItem'];
+      if (!menuItem) return 'secondary';
       return menuItem;
     }
   }
-
 
 }
