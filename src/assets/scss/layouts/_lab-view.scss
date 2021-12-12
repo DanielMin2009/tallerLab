@@ -1,16 +1,15 @@
 // View | Common
-.lab-view-wrap {
-    flex-grow: 1;
+.lab-view {
     position: relative;
+    overflow-y: auto;
+    height: 100%;
 }
 
-.lab-view {
-    overflow-y: auto;
+.lab-view__content {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    height: 100%;
     p {
         font: {
             size: 3.2rem;

@@ -12,7 +12,11 @@ import { ROUTE_SLIDE_TOP_STATE_TRIGGER } from '../../shared/animations/route-ani
 export class LabPublicShellComponent {
 
   goToView(outlet: RouterOutlet) {
-    if (outlet.isActivated) return outlet.activatedRoute.snapshot.url;
+    if (outlet.isActivated) {
+      const menuItem = outlet.activatedRouteData['menuItem']
+      if (!menuItem) return 'secondary'
+      return menuItem;
+    }
   }
 
 

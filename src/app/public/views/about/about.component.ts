@@ -1,7 +1,8 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
 @Component({
   selector: 'lab-about-view-component',
   templateUrl: './about.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LabAboutViewComponent {
 
