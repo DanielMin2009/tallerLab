@@ -1,7 +1,7 @@
-<div class="lab-shell">
+<div #publicShell class="lab-shell">
     <lab-public-header-component></lab-public-header-component>
     <main class="lab-shell__view-wrap" [@routeSlideTopState]="goToView(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
     </main>
     <lab-public-sidenav-component></lab-public-sidenav-component>
-</div>
+</div> 
