@@ -1,1 +1,110 @@
-$headerheight: 5rem;
+// Sass variables
+// Brand colors
+$lab-brand-color-primary: rgba(255, 255, 255, 1); 
+$lab-brand-color-secondary: rgba(0, 0, 0, 1);
+$lab-brand-color-tertiary: rgba(238, 237, 237, 1);
+$lab-brand-color-quaternary: rgba(255, 255, 255, 0.4);
+$lab-brand-color-quinary: rgba(0, 0, 0, 0.4);
+$lab-brand-color-senary: rgba(238, 237, 237, 0.4);
+// Project colors
+$lab-basic-color-primary: rgba(32, 52, 75, 1);
+$lab-basic-color-secondary: rgba(54, 85, 122, 1);
+$lab-basic-color-tertiary: rgba(75, 117, 162, 1);
+$lab-basic-color-quaternary: rgba(121, 166, 218, 1);
+$lab-basic-color-quinary: rgba(180, 214, 244, 1);
+$lab-basic-color-senary: rgba(195, 181, 139, 1);
+// Text colors
+$lab-text-color-primary: rgba(255, 255, 255, 1);
+$lab-text-color-secondary: rgba(0, 0, 0, 1);
+$lab-text-color-tertiary: rgba(238, 237, 237, 1);
+$lab-text-color-quaternary: rgba(32, 52, 75, 1);
+// State colors
+$lab-error-color-primary: rgba(255, 0, 56, 1);
+$lab-error-color-secondary: rgba(255, 0, 56, 0.4);
+$lab-success-color-primary: rgba(42, 242, 56, 1);
+$lab-success-color-secondary: rgba(42, 242, 56, 0.4);
+$lab-warning-color-primary: rgba(255, 130, 0, 1);
+$lab-warning-color-secondary: rgba(255, 130, 0, 0.4);
+$lab-info-color-primary: rgba(0, 127, 255, 1);
+$lab-info-color-secondary: rgba(0, 127, 255, 0.4);
+// FONT SIZES
+$lab-font-size-xxx-large: 2.125rem; // 34px
+$lab-font-size-xx-large: 1.875rem; // 30px
+$lab-font-size-x-large: 1.5rem; // 24px
+$lab-font-size-large: 1.125rem; // 18px
+$lab-font-size-medium: 1rem; // 16px
+$lab-font-size-small: .875rem; // 14px
+$lab-font-size-x-small: .8125rem; // 13px
+$lab-font-size-xx-small: 12px; // 12px
+$lab-font-size-xxx-small: 11px; // 11px
+// SPACINGS
+$lab-spacing-xxx-large: 2rem; // 32px
+$lab-spacing-xx-large: 1.875rem; // 30px
+$lab-spacing-x-large: 1.5rem; // 24px
+$lab-spacing-large: 1.125rem; // 18px
+$lab-spacing-medium: 1rem; // 16px
+$lab-spacing-small: .75rem; // 12px
+$lab-spacing-x-small: .5rem; // 8px
+$lab-spacing-xx-small: .375rem; // 6px
+$lab-spacing-xxx-small: .25rem; // 4px
+// RADIUS
+$lab-border-radius-small: .25rem; // 4px
+$lab-border-radius-large: 6px; // 6px
+
+
+// Root variables
+:root {
+    // COLORS
+    // Brand colors
+    --lab-brand-color-primary: #{$lab-brand-color-primary}; // rgba(255, 255, 255, 1) #ffffff
+    --lab-brand-color-secondary: #{$lab-brand-color-secondary}; // rgba(0, 0, 0, 1) #000000
+    --lab-brand-color-tertiary: #{$lab-brand-color-tertiary};  // rgba(238, 237, 237, 1) #eeeded
+    --lab-brand-color-quaternary: #{$lab-brand-color-quaternary}; // rgba(255, 255, 255, 0.4)
+    --lab-brand-color-quinary: #{$lab-brand-color-quinary}; // rgba(0, 0, 0, 0.4)
+    --lab-brand-color-senary: #{$lab-brand-color-senary}; // rgba(238, 237, 237, 0.4)
+    // Project colors
+    --lab-basic-color-primary: #{$lab-basic-color-primary}; // rgba(32, 52, 75, 1)
+    --lab-basic-color-secondary: #{$lab-basic-color-secondary}; // rgba(54, 85, 122, 1)
+    --lab-basic-color-tertiary: #{$lab-basic-color-tertiary}; // rgba(75, 117, 162, 1)
+    --lab-basic-color-quaternary: #{$lab-basic-color-quaternary}; // rgba(121, 166, 218, 1)
+    --lab-basic-color-quinary: #{$lab-basic-color-quinary}; // rgba(180, 214, 244, 1)
+    --lab-basic-color-senary: #{$lab-basic-color-senary}; // rgba(195, 181, 139, 1)
+    // Text colors
+    --lab-text-color-primary: #{$lab-text-color-primary}; // rgba(255, 255, 255, 1)
+    --lab-text-color-secondary: #{$lab-text-color-secondary}; // rgba(0, 0, 0, 1)
+    --lab-text-color-tertiary: #{$lab-text-color-tertiary}; // rgba(238, 237, 237, 1)
+    --lab-text-color-quaternary: #{$lab-text-color-quaternary}; // rgba(32, 52, 75, 1)
+    // State colors
+    --lab-error-color-primary: #{$lab-error-color-primary}; // rgba(255, 0, 56, 1)
+    --lab-error-color-secondary: #{$lab-error-color-secondary}; // rgba(255, 0, 56, 0.4)
+    --lab-success-color-primary: #{$lab-success-color-primary}; // rgba(42, 242, 56, 1)
+    --lab-success-color-secondary: #{$lab-success-color-secondary}; // rgba(42, 242, 56, 0.4)
+    --lab-warning-color-primary: #{$lab-warning-color-primary}; // rgba(255, 130, 0, 1)
+    --lab-warning-color-secondary: #{$lab-warning-color-secondary}; // rgba(255, 130, 0, 0.4)
+    --lab-info-color-primary: #{$lab-info-color-primary}; // rgba(0, 127, 255, 1)
+    --lab-info-color-secondary: #{$lab-info-color-secondary}; // rgba(0, 127, 255, 0.4)
+    // FONT SIZES
+    --lab-font-size-xxx-large: #{$lab-font-size-xxx-large}; // 2.125rem; // 34px
+    --lab-font-size-xx-large: #{$lab-font-size-xx-large}; // 1.875rem; // 30px
+    --lab-font-size-x-large: #{$lab-font-size-x-large}; // 1.5rem; // 24px
+    --lab-font-size-large: #{$lab-font-size-large}; // 1.125rem; // 18px
+    --lab-font-size-medium: #{$lab-font-size-medium}; // 1rem; // 16px
+    --lab-font-size-small: #{$lab-font-size-small}; // .875rem; // 14px
+    --lab-font-size-x-small: #{$lab-font-size-x-small}; // .8125rem; // 13px
+    --lab-font-size-xx-small: #{$lab-font-size-xx-small}; // 12px; // 12px
+    --lab-font-size-xxx-small: #{$lab-font-size-xxx-small}; // 11px; // 11px
+    // SPACINGS
+    --lab-spacing-xxx-large: #{$lab-spacing-xxx-large}; // 2rem; // 32px
+    --lab-spacing-xx-large: #{$lab-spacing-xx-large}; // 1.875rem; // 30px
+    --lab-spacing-x-large: #{$lab-spacing-x-large}; // 1.5rem; // 24px
+    --lab-spacing-large: #{$lab-spacing-large}; // 1.125rem; // 18px
+    --lab-spacing-medium: #{$lab-spacing-medium}; // 1rem; // 16px
+    --lab-spacing-small: #{$lab-spacing-small}; // .75rem; // 12px
+    --lab-spacing-x-small: #{$lab-spacing-x-small}; // .5rem; // 8px
+    --lab-spacing-xx-small: #{$lab-spacing-xx-small}; // .375rem; // 6px
+    --lab-spacing-xxx-small: #{$lab-spacing-xxx-small}; // .25rem; // 4px
+    // RADIUS
+    --lab-border-radius-small: #{$lab-border-radius-small}; // .25rem; // 4px
+    --lab-border-radius-large: #{$lab-border-radius-large}; // 6px; // 6px
+  }
+
