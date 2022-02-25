@@ -8,7 +8,7 @@ import { LabHomeViewComponent } from './public/views/home/home.component';
 import { LabProjectsViewComponent } from './public/views/projects/projects.component';
 
 const ROUTES: Routes = [
-  { path: "", component: LabHomeViewComponent, data: { menuItem: 1 } },
+  { path: "", component: LabHomeViewComponent, data: { menuItem: 5 } },
   { path: "about", component: LabAboutViewComponent, data: { menuItem: 2 } },
   { path: "projects", component: LabProjectsViewComponent, data: { menuItem: 3 } },
   { path: "contact", component: LabContactViewComponent, data: { menuItem: 4 } },
